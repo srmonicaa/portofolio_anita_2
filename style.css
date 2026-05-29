@@ -137,3 +137,52 @@ h1{font-size:clamp(54px,8vw,112px);line-height:.96;margin:0 0 22px;letter-spacin
   object-fit: cover;
   flex-shrink: 0;
 }
+
+/* Container card horizontal */
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card styling */
+.experience-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Scrollable images */
+.scroll-images {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;      /* Scroll horizontal */
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.scroll-images img {
+  flex-shrink: 0;
+  width: 80px;           /* Ukuran seragam */
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Scrollbar styling */
+.scroll-images::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+/* Responsif mobile */
+@media (max-width: 600px) {
+  .experience-cards {
+    grid-template-columns: 1fr;
+  }
+}

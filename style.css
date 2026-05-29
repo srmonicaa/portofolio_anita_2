@@ -186,3 +186,16 @@ h1{font-size:clamp(54px,8vw,112px);line-height:.96;margin:0 0 22px;letter-spacin
     grid-template-columns: 1fr;
   }
 }
+
+.btn.wa {
+  background-color: #25D366; /* hijau WA */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.wa:hover {
+  background-color: #1ebe57;
+}

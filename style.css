@@ -199,3 +199,44 @@ h1{font-size:clamp(54px,8vw,112px);line-height:.96;margin:0 0 22px;letter-spacin
 .btn.wa:hover {
   background-color: #1ebe57;
 }
+
+/* Tombol umum */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+/* Primary / Secondary */
+.btn.primary {
+  background-color: #ec6f95;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  border: 2px solid #ec6f95;
+  color: #ec6f95;
+}
+
+/* Tombol CV dan WA */
+.btn.tertiary {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  color: #333;
+  margin-left: 10px;
+}
+
+.btn.wa {
+  background-color: #25D366; /* hijau WhatsApp */
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}

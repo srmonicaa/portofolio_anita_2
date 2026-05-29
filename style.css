@@ -121,3 +121,19 @@ h1{font-size:clamp(54px,8vw,112px);line-height:.96;margin:0 0 22px;letter-spacin
   border-radius: 8px;
   object-fit: cover;
 }
+
+.experience-images {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: nowrap;    /* Tetap satu baris */
+  overflow: hidden;     /* Sembunyikan lebih dari 3 gambar */
+}
+
+.experience-images img {
+  width: 80px;          /* Sesuaikan ukuran gambar */
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
